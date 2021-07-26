@@ -1,0 +1,62 @@
+
+.footer{
+    width: 100%;
+    min-height: 70px;
+    background-image: linear-gradient(to bottom right,rgb(50, 255, 238),#0080ff);
+    }
+  .footerlinks a{
+    padding: 20px 5px;
+    text-decoration: none;
+    color: blueviolet;
+    float: left;
+  }
+  .footerlinks a:hover{
+    background-color: cornflowerblue;
+  }
+
+
+.orderedlist{
+  font-family: monospace;
+}
+
+.output{  
+  color:white;
+  background-color:black;
+  font-family: monospace;
+  border-radius: 10px;
+  border: 3px solid red;
+}
+.code{
+  font-family: monospace;
+  background-color: rgb(48, 48, 48);
+  border-radius: 15px;
+  border: 3px solid rgb(20, 99, 189);
+  color:aliceblue;
+  /*
+  <span style="color: rgb(251, 255, 0);">print input for yellow</span>
+  <span style="color: rgb(0, 168, 0);"># float green comments</span>
+  <span style="color: rgb(118, 239, 255);">num light blue variable names</span>
+<span style="color: rgb(25, 117, 255);">True dark blue</span> 
+<span style="color: rgb(255, 123, 15);">'code hub' orAnge quotes </span> 
+<span style="color: rgb(0, 255, 128);">type range emeraldGreene</span>
+<span style="color: violet;">if else while Violet</span>
+
+
+*/
+}
+
+th, td {
+  padding: 10px;
+}
+
+@media (max-height: 500px){
+  .footerlinks a{
+    padding: 10px 5px;
+    text-decoration: none;
+    color: rgb(223, 226, 43);
+    float: left;
+    font-size: 10px;
+  }
+}
+
+

@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>#12 - List and Tuple Operations - Code Hub</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+        <link rel="stylesheet" href="style.css">
+    
+        <!--Font Awesome (for icons)-->
+        <script src="https://kit.fontawesome.com/821706cb87.js" crossorigin="anonymous"></script>
+    
+        <!--Animate CSS-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+        <!--Google Fonts-->
+   
+</head>
+<body>
+
+  <!--navbar-->
+  <div>
+    <nav 
+    style="min-height: 111px; "
+    class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <div class="container-fluid">
+            <a class="navbar-brand titlewebpage" href="../index.html">
+              <img src="../media/logo.jpg" width="100px" class="rounded-circle">
+              CodeHub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item btn-outline-danger">
+                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                </li>
+               <!-- <li class="nav-item btn-outline-info">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle btn-outline-info" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tutorials
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../python.html">Python</a></li>
+                    <!--<li><a class="dropdown-item" href="#">Android dev</a></li>
+                   <li><a class="dropdown-item" href="#">Web dev</a></li>-->
+                  </ul>
+                </li>
+                <li class="nav-item btn-outline-warning">
+                    <a class="nav-link" aria-current="page" href="../projects.html">Projects</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav ml-auto">
+
+                  <li class="nav-item btn-outline-success">
+                      <a class="nav-link" aria-current="page" href="https://www.youtube.com/channel/UCzOqZOhMa6NsdVtUbjt1xAw">
+                        <i class="fa fa-youtube" aria-hidden="true">
+                          Youtube
+                        </i>
+                      </a>
+                    </li>
+                    <li class="nav-item btn-outline-primary">
+                      <a class="nav-link" href="https://www.instagram.com/mr.m_y_s_t_e_r_y/">
+                        <i class="fa fa-instagram" aria-hidden="true">
+                          Instagram
+                        </i>
+                      </a>
+                    </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+    </div>
+  </div>
+  
+<div class="container">
+    <h1 style="margin-top: 188px;">
+        <u>
+          #12 - List and Tuple Operations
+        </u> 
+      </h1>
+</div>
+
+<!--content-->
+<div class="container">
+    A few of the basic list operations used in Python programming are <br>
+    <br>
+ 
+<ol>
+  <li>
+    extend() 
+  </li>
+  <li>
+    insert()
+  </li>
+  <li>
+    append() 
+  </li>
+  <li>
+    remove()
+  </li>
+  <li>
+    pop()
+  </li>
+  <li>
+    min() 
+  </li>
+  <li>
+    max() 
+  </li>
+  <li>
+    sort()
+  </li>
+  <li>
+    sorted()
+  </li>
+  <li>
+    index() 
+  </li>
+  <li>
+    clear() 
+  </li>
+  <li>
+    list()
+  </li>
+  <li>
+    tuple() etc.
+  </li>
+</ol>
+ <br><br>
+ <h4>1. append()</h4> <br>
+    The append() method is used to add elements at the end of the list. This method can only add a single element at a time.
+    <br><br>
+    
+    <b>EXAMPLE:</b> <br><br>
+<div class="code">
+  <ol>
+    <li>
+      <span style="color: rgb(118, 239, 255);">list1</span> = [1,2,3,4,5]
+    </li>
+    <li>
+      <span style="color: rgb(118, 239, 255);">list1</span>.<span style="color: rgb(251, 255, 0);">append</span>(6) <span style="color: rgb(0, 168, 0);"># adding 6 at the end</span>  
+    </li>
+    <li>
+      <span style="color: rgb(118, 239, 255);">list1</span>.<span style="color: rgb(251, 255, 0);">append</span>(7) <span style="color: rgb(0, 168, 0);"># adding 7 at the end</span>  
+    </li>
+    <li>
+      <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">list1</span>)
+    </li>
+  </ol>
+</div>
+    <br>
+    <b>OUTPUT:</b> <br><br>
+
+   <div class="output">
+    [1,2,3,4,5,6,7]
+   </div>
+    <br><br>
+  <h4>2. extend()</h4>
+      The extend() method is used to add more than one element at the end of the list.
+      Although it can add more than one element, unlike append(), it adds them at the end of the list like append()
+      <br><br>
+      <b>EXAMPLE:</b> <br><br>
+      <div class="code">
+
+        <ol>
+          <li>
+            <span style="color: rgb(118, 239, 255);">list1</span> = [1,2,3,4,5]
+          </li>
+          <li>
+            <span style="color: rgb(118, 239, 255);">list1</span>.<span style="color: rgb(251, 255, 0);">extend</span>([8,9,10])  <span style="color: rgb(0, 168, 0);"># adding 8,9,10 at the end, append use to add single element , extend is use to add multilple elements at the end</span>  
+          </li>
+          <li>
+            <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">list1</span>)
+          </li>
+        </ol>
+      </div>
+      <br><br>
+      <b> OUTPUT:</b> <br> <br>
+      <div class="output">
+        [1,2,3,4,5,8,9,10]
+      </div>
+      <br><br>
+      <h4>3. insert()</h4> <br><br>
+    The insert() method can add an element at a given position in the list. 
+    Thus, unlike append(), it can add elements at any position, but like append(), 
+    it can add only one element at a time. This method takes two arguments.
+    The first argument specifies the position, and the second argument specifies the element to be inserted.
+    <br><br>
+    <b>EXAMPLE:</b> <br><br>
+      <div class="code">
+        <ol>
+          <li>
+            <span style="color: rgb(118, 239, 255);">list1</span> = [1,2,3,4,5]
+          </li>
+          <li>
+            <span style="color: rgb(118, 239, 255);">list1</span>.<span style="color: rgb(251, 255, 0);">insert</span>(0, -100) <span style="color: rgb(0, 168, 0);"># adding -100 at the 0th index</span> 
+          </li>
+          <li>
+            <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">list1</span>)
+          </li>
+        </ol>
+      </div>
+    <br><br>
+    <b>OUTPUT:</b> <br><br>
+    <div class="output">
+      [-100, 1, 2, 3,4,5]
+    </div>
+    <br><br>
+ <h4>4. remove()</h4> <br>
+    The remove() method is used to remove an element from the list.
+    In the case of multiple occurrences of the same element, only the first occurrence is removed.
+    <br><br>
+    <b>EXAMPLE:</b> <br><br>
+    <div class="code">
+      <span style="color: rgb(118, 239, 255);">list1</span> = [1,2,3,4,5] <br>
+      <span style="color: rgb(118, 239, 255);">list1</span>.<span style="color: rgb(251, 255, 0);">remove</span>(5) <br>
+      <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">list1</span>)
+    </div>
+    <br><br>
+    <b>OUTPUT:</b> <br><br>
+    <div class="output">
+      [1,2,3,4]
+    </div>
+    <br><br>    
+    <h4>5. pop()</h4>
+    The method pop() can remove an element from any position in the list.
+    The parameter supplied to this method is the index of the element to be removed.
+    <br><br>
+    <b>EXAMPLE:</b> <br><br>
+    <div class="code">
+      <ol>
+        <li>
+          <span style="color: rgb(118, 239, 255);">list1</span> = [1,2,3,4,5] <br>
+        </li>
+        <li>
+          <span style="color: rgb(118, 239, 255);">list1</span>.<span style="color: rgb(251, 255, 0);">pop</span>()  <span style="color: rgb(0, 168, 0);"># if the index in not specified then the last element will be deleted</span>  
+        </li>
+        <li>
+          <span style="color: rgb(118, 239, 255);">list1</span>.<span style="color: rgb(251, 255, 0);">pop</span>(0) <span style="color: rgb(0, 168, 0);"># this deletes the element at 0th index</span>  
+        </li>
+      </ol>
+    </div>
+    <br><br>
+    <b>OUTPUT:</b> <br><br>
+    <div class="output">
+      [2,3,4]
+    </div>
+    
+    <br><br>
+    <h4>6. len()</h4> <br><br>
+    The len() method returns the length of the list, i.e. the number of elements in the list.
+    <br><br>
+    <b>EXAMPLE:</b> <br><br>
+    <div class="code">
+      <span style="color: rgb(118, 239, 255);">list1</span> = [1,2,3,4,5] <br>
+      <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(251, 255, 0);">len</span>(<span style="color: rgb(118, 239, 255);">list1</span>))
+    </div>
+    <br><br>
+    
+    <B> OUTPUT:</B> <br><br>
+    <div class="output">
+      5
+    </div>
+    <br><br>
+    <h4>7. min() & max()</h4> <br><br>
+    The min() method returns the minimum value in the list.
+    The max() method returns the maximum value in the list.
+    Both the methods accept only homogeneous lists, i.e. list having elements of similar type.
+    <br><br>
+    <b>EXAMPLE:</b> <br><br>
+    <div class="code">
+      <ol>
+        <li>
+          <span style="color: rgb(118, 239, 255);">list1</span> = [1,2,3,4,5] <br>
+        </li>
+        <li>
+          <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(251, 255, 0);">min</span>(<span style="color: rgb(118, 239, 255);">list1</span>)) <span style="color: rgb(0, 168, 0);"># minimum of the list</span>   <br>
+        </li>
+        <li>
+          <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(251, 255, 0);">max</span>(<span style="color: rgb(118, 239, 255);">list1</span>)) <span style="color: rgb(0, 168, 0);"># maximum of the list</span>  <br>
+        </li>
+      </ol>
+    </div>
+    <br><br>    
+    <b>OUTPUT:</b> <br><br>
+    <div class="output">
+      1         <br>
+      5 
+    </div>
+        
+    <br><br>
+    <h4>8. sort()</h4> <br><br>
+    The sort method sorts the list in ascending order. 
+    This operation can only be performed on homogeneous lists, i.e. lists having elements of similar type. <br>
+    SORT METHOD MAKE CHANGES TO THE ORIGINAL LIST .
+    <br><br>
+    <b>EXAMPLE:</b> <br><br>
+    <div class="code">
+      <span style="color: rgb(118, 239, 255);">list1</span> = [5,3,6,23,2] <br>
+      <span style="color: rgb(118, 239, 255);">list1</span>.<span style="color: rgb(251, 255, 0);">sort</span>() <br>
+      <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">list1</span>)
+    </div>
+    <br><br>
+    
+    <b>OUTPUT:</b> <br><br>
+    <div class="output">
+      [2,3,5,6,23]
+    </div>
+    
+    <br><br>
+    <h4>9.sorted()</h4> <br><br>
+    The sort method sorts the list in ascending order. 
+    This operation can only be performed on homogeneous lists, i.e. lists having elements of similar type. <br>
+    UNLIKE SORT , SORTED METHOD RETURNS A NEW LIST AND THE ORIGINAL LIST IS NOT CHANGED.
+    <br><br>
+    <b>EXAMPLE:</b> <br><br>
+    <div class="code">
+      <ol>
+        <li>
+          <span style="color: rgb(118, 239, 255);">list1</span> = [5,3,6,23,2] <br>
+        </li>
+        <li>
+          <span style="color: rgb(118, 239, 255);">l1</span> = <span style="color: rgb(251, 255, 0);">sorted</span>(<span style="color: rgb(118, 239, 255);">list1</span>) <br>
+        </li>
+        <li>
+          <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">list1</span>) <span style="color: rgb(0, 168, 0);">#original list</span>  <br>
+        </li>
+        <li>
+          <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">l1</span>)    <span style="color: rgb(0, 168, 0);">   #new sorted list</span>  <br>
+        </li>
+      </ol>
+    </div>
+    <br><br>
+    <b>OUTPUT:</b> <br><br>
+    <div class="output">
+      [5,3,6,23,2]     <br> 
+      [2,3,5,6,23] 
+    </div>    
+    <br><br>
+    <h4>10. clear()</h4> <br><br>
+    clear method is used to delete all the elements in the list , but the list in not deleted .
+    <br><br>
+    <b>EXAMPLE:</b> <br><br>
+    <div class="code">
+      <span style="color: rgb(118, 239, 255);">list1</span> = [2,34,5,6,3] <br>
+      <span style="color: rgb(118, 239, 255);">list1</span>.<span style="color: rgb(251, 255, 0);">clear</span>() <br>
+      <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">list1</span>)
+    </div>
+
+    <br><br>
+    <b>OUTPUT:</b> <br><br>
+    <div class="output">
+      []
+    </div>
+    
+    <br><br>
+<h4>11. list()</h4>
+    This method is used to convert the give arguments into a list . We can convert a tuple in to a list, a set into a list .
+    <br><br>
+    <b>EXAMPLE:</b><br><br>
+    <div class="code">
+      <span style="color: rgb(118, 239, 255);">tu</span> = (1,2,3,4) <br>
+      <span style="color: rgb(118, 239, 255);">st</span> = {1,2,3,4} <br>
+      <span style="color: rgb(118, 239, 255);">l1</span> = <span style="color: rgb(0, 255, 128);">list</span>(<span style="color: rgb(118, 239, 255);">tu</span>) <br>
+      <span style="color: rgb(118, 239, 255);">l2</span> = <span style="color: rgb(0, 255, 128);">list</span>(<span style="color: rgb(118, 239, 255);">st</span>) <br>
+      <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">l1</span>) <br>
+      <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">l2</span>) <br>
+    </div>
+      <br><br>
+    <b>OUTPUT:</b> <br><br>
+    <div class="output">
+      [1,2,3,4] <br>
+      [1,2,3,4]
+    </div>
+    <br><br>
+<h4>12. tuple()</h4> <br><br>
+    This method is used to convert the give arguments into a tuple. We can convert a list in to a tuple, a set into a tuple .
+    <br><br>
+    <b>EXAMPLE:</b> <br> <br>
+    <div class="code">
+      <span style="color: rgb(118, 239, 255);">l1</span> = [1,2,3,4] <br>
+      <span style="color: rgb(118, 239, 255);">l2</span> = {1,2,3,4} <br>
+      <span style="color: rgb(118, 239, 255);">t1</span> = <span style="color: rgb(0, 255, 128);">tuple</span>(<span style="color: rgb(118, 239, 255);">l1</span>) <br>
+      <span style="color: rgb(118, 239, 255);">t2</span> = <span style="color: rgb(0, 255, 128);">tuple</span>(<span style="color: rgb(118, 239, 255);">l2</span>) <br>
+      <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">t1</span>) <br>
+      <span style="color: rgb(251, 255, 0);">print</span>(<span style="color: rgb(118, 239, 255);">t2</span>)
+    </div>
+    <br><br>
+    <b>OUTPUT:</b> <br><br>
+    <div class="output">
+      (1,2,3,4) <br>
+      (1,2,3,4)
+    </div>
+    <br><br>
+    
+    
+    
+</div>
+
+
+
+
+
+    <!--Footer-->
+    <div class="footer">
+          <p class="footerlinks">
+              <a href="https://www.youtube.com/channel/UCzOqZOhMa6NsdVtUbjt1xAw">
+                <i class="fa fa-youtube" aria-hidden="true">
+                  Youtube  
+                </i>
+              </a>
+              <a href="https://www.instagram.com/mr.m_y_s_t_e_r_y/">
+                <i class="fa fa-instagram" aria-hidden="true">
+                   Instagram
+                </i>
+              </a>
+          </p>
+  
+          <br>
+  
+          <p>
+            <i class="fas fa-copyright" style="float: right;">
+               CodeHub Inc.
+            </i>
+          </p>
+      </div>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+        <!--Parallax Effect-->
+        <script src="parallax.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+</body>
+</html>

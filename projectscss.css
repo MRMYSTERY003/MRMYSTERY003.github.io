@@ -1,0 +1,18 @@
+
+.footer{
+    width: 100%;
+    min-height: 70px;
+    background-image: linear-gradient(to bottom right,rgb(50, 255, 238),#0080ff);
+    }
+  .footerlinks{
+    text-decoration: none;
+  }
+  .footerlinks a{
+    padding: 20px 5px;
+    text-decoration: none;
+    color: blueviolet;
+    float: left;
+  }
+  .footerlinks a:hover{
+    background-color: cornflowerblue;
+  }
